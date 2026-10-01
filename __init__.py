@@ -12,7 +12,8 @@
     POST /push          → {"text": "..."}                 走模板（下命令 + 原文）
     POST /speak         → {"text": "..."}                 原样投递，不加模板
 
-只绑定 127.0.0.1；端口与模板见 plugin.toml 的 [dsh_bridge] 段。
+只绑定 127.0.0.1；端口与模板见 config.example.toml 的 [dsh_bridge] 段
+（首次运行会复制成用户配置，之后可在插件配置面板里改）。
 """
 
 from __future__ import annotations
